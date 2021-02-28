@@ -55,7 +55,7 @@ open class ChartPointViewBar: UIView {
 
     var isSelected: Bool = false
     
-    var tapHandler: ((ChartPointViewBar) -> Void)? {
+    public var tapHandler: ((ChartPointViewBar) -> Void)? {
         didSet {
             if tapHandler != nil && gestureRecognizers?.isEmpty ?? true {
                 enableTap()
